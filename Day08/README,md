@@ -1,0 +1,67 @@
+# Day 08 - Arrays: Reverse Array
+
+## Problem Statement
+
+Given an array of integers, print the elements in reverse order.
+
+## Example
+
+Input:
+
+```text
+4
+1 4 3 2
+```
+
+Output:
+
+```text
+2 3 4 1
+```
+
+## Approach
+
+1. Read the size of the array `n`.
+2. Read all array elements into a list.
+3. Traverse the array from the last index to the first index.
+4. Print each element while maintaining proper spacing.
+
+## Concepts Used
+
+* Arrays / Lists
+* Loops
+* Input Handling
+* Reverse Traversal
+* Java Streams
+
+## Code Logic
+
+```java
+for (int i = n - 1; i >= 0; i--) {
+    System.out.print(arr.get(i));
+
+    if (i > 0) {
+        System.out.print(" ");
+    }
+}
+```
+
+The loop starts from the last element and moves backward until the first element, printing the array in reverse order.
+
+## Time Complexity
+
+* O(n)
+
+## Space Complexity
+
+* O(n)
+
+## Learning Outcome
+
+This exercise helps practice:
+
+* Array traversal
+* Reverse iteration
+* Working with Lists in Java
+* Input parsing using Streams
+* Output formatting
